@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Random_guess_game</string>
+    <string name="random">Number Guessing Game</string>
+    <string name="intro">Enter a number:</string>
+    <string name="submit">SUBMIT</string>
+    <string name="instruct">Instructions</string>
+
+
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Mr. Potato Head</string>
+    <string name="header">Mr. Potato Head</string>
+    <string name="instruct">Click his part to add/remove them!</string>
+    <string name="hat">Hat</string>
+    <string name="eyes">Eyes</string>
+    <string name="eyebrow">Eyebrows</string>
+    <string name="glasses">Glasses</string>
+    <string name="nose">Nose</string>
+    <string name="mouth">Mouth</string>
+    <string name="mustache">Mustache</string>
+    <string name="ears">Ears</string>
+    <string name="arms">Arms</string>
+    <string name="shoes">Shoes</string>
+</resources>    

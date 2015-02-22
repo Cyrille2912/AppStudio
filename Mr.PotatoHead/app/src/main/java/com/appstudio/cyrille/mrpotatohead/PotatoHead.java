@@ -39,6 +39,7 @@ public class PotatoHead extends Activity {
                 else {
                     hat.setVisibility(ImageView.INVISIBLE);
                 }
+                break;
             case R.id.checkEars:
                 if (checkbox.isChecked()) {
                     ears.setVisibility(ImageView.VISIBLE);
@@ -46,6 +47,7 @@ public class PotatoHead extends Activity {
                 else {
                     ears.setVisibility(ImageView.INVISIBLE);
                 }
+                break;
             case R.id.checkArms:
                 if (checkbox.isChecked()) {
                     arms.setVisibility(ImageView.VISIBLE);
@@ -53,6 +55,7 @@ public class PotatoHead extends Activity {
                 else {
                     arms.setVisibility(ImageView.INVISIBLE);
                 }
+                break;
             case R.id.checkEyebrow:
                 if (checkbox.isChecked()) {
                     eyebrows.setVisibility(ImageView.VISIBLE);
@@ -60,6 +63,7 @@ public class PotatoHead extends Activity {
                 else {
                     eyebrows.setVisibility(ImageView.INVISIBLE);
                 }
+                break;
             case R.id.checkGlasses:
                 if (checkbox.isChecked()) {
                     glasses.setVisibility(ImageView.VISIBLE);
@@ -67,6 +71,7 @@ public class PotatoHead extends Activity {
                 else {
                     glasses.setVisibility(ImageView.INVISIBLE);
                 }
+                break;
             case R.id.checkMouth:
                 if (checkbox.isChecked()) {
                     mouth.setVisibility(ImageView.VISIBLE);
@@ -74,6 +79,7 @@ public class PotatoHead extends Activity {
                 else {
                     mouth.setVisibility(ImageView.INVISIBLE);
                 }
+                break;
             case R.id.checkMustache:
                 if (checkbox.isChecked()) {
                     mustache.setVisibility(ImageView.VISIBLE);
@@ -81,6 +87,7 @@ public class PotatoHead extends Activity {
                 else {
                     mustache.setVisibility(ImageView.INVISIBLE);
                 }
+                break;
             case R.id.checkNose:
                 if (checkbox.isChecked()) {
                     nose.setVisibility(ImageView.VISIBLE);
@@ -88,6 +95,7 @@ public class PotatoHead extends Activity {
                 else {
                     nose.setVisibility(ImageView.INVISIBLE);
                 }
+                break;
             case R.id.checkShoes:
                 if (checkbox.isChecked()) {
                     shoes.setVisibility(ImageView.VISIBLE);
@@ -95,6 +103,7 @@ public class PotatoHead extends Activity {
                 else {
                     shoes.setVisibility(ImageView.INVISIBLE);
                 }
+                break;
             case R.id.checkEyes:
                 if (checkbox.isChecked()) {
                     eyes.setVisibility(ImageView.VISIBLE);
@@ -102,6 +111,7 @@ public class PotatoHead extends Activity {
                 else {
                     eyes.setVisibility(ImageView.INVISIBLE);
                 }
+                break;
         }
     }
 }

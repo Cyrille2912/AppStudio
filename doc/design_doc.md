@@ -28,7 +28,7 @@
 	* A Option menu on Gamescreen: 'OptionGameMenu'
 
 ## Public methods/Actions
-	* ChangePlayerScreen(): takes no argument and doesn't return anything, it just changes the screen between players.
+	* ChangePlayerScreen(): takes no argument and doesn't return anything, it just changes the screen between the players.
 	* AddLetterToWordFragment(): takes a character as argument and returns a string. 
 	* CheckWordInDictionary(): takes a string as argument and returns true or false as return type (boolean expression).
 	* UpDateHighScore(): takes a string as argument (winner's name) and doesn't return anything, it adds a point to the winner in the high score list.

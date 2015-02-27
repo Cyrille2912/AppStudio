@@ -20,7 +20,7 @@
 	* ScorePlayer2
 	* HighScores
 	* ReasonForWinningText
-	* DictionaryState
+  * DictionaryState
 
 ## Platform-specific controls
 	* Editable TextView with spinner with for class name: 'PlayerNameSpinner'
@@ -35,3 +35,12 @@
 	* UpDateSpinnerList(): takes a string as argument (new player name).
 	* ChangeLanguage(): doesn't take any arguments and doesn't return anything.
 	* ChangePlayerName(): takes a string as argument and returns a string.
+
+## UI sketches
+
+![My image](Cyrille2912.github.com/AppStudio/doc/IMG_3486.JPG)
+![My image](Cyrille2912.github.com/AppStudio/doc/IMG_3488.JPG)
+![My image](Cyrille2912.github.com/AppStudio/doc/IMG_3489.JPG)
+![My image](Cyrille2912.github.com/AppStudio/doc/IMG_3490.JPG)
+![My image](Cyrille2912.github.com/AppStudio/doc/IMG_3491.JPG)
+![My image](Cyrille2912.github.com/AppStudio/doc/IMG_3493.JPG)

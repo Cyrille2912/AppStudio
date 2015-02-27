@@ -42,11 +42,12 @@ The goal of this project is to implement the game of Ghost which is a two player
 
 ## UI sketches
 
-![My image](Cyrille2912.github.com/AppStudio/doc/IMG_3470.JPG)
-![My image](Cyrille2912.github.com/AppStudio/doc/IMG_3471.JPG)
-![My image](Cyrille2912.github.com/AppStudio/doc/IMG_3472.JPG)
-![My image](Cyrille2912.github.com/AppStudio/doc/IMG_3475.JPG)
-![My image](Cyrille2912.github.com/AppStudio/doc/IMG_3474.JPG)
+![My image](Cyrille2912.github.com/AppStudio/doc/IMG_3486.JPG)
+![My image](Cyrille2912.github.com/AppStudio/doc/IMG_3488.JPG)
+![My image](Cyrille2912.github.com/AppStudio/doc/IMG_3489.JPG)
+![My image](Cyrille2912.github.com/AppStudio/doc/IMG_3490.JPG)
+![My image](Cyrille2912.github.com/AppStudio/doc/IMG_3491.JPG)
+![My image](Cyrille2912.github.com/AppStudio/doc/IMG_3493.JPG)
 
 ## Internal libraries
 

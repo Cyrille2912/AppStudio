@@ -4,20 +4,16 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
 
-public class WinnerScreen extends Activity {
-
-    private Button scores;
+public class WinnerActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_winner_screen);
+        setContentView(R.layout.activity_winner);
 
-        scores = (Button)findViewById(R.id.highScoresButton);
         TextView winner = (TextView)findViewById(R.id.winnerTextView);
         TextView reasonForWin = (TextView)findViewById(R.id.reasonWinningTextView);
 
@@ -32,15 +28,8 @@ public class WinnerScreen extends Activity {
 
     }
 
-
     public void onScoresButtonClick(View view) {
-        final Intent getScoresScreenIntent = new Intent(this, ScoresScreen.class);
-        scores.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(getScoresScreenIntent);
-            }
-        });
+        Intent getScoresScreenIntent = new Intent(this, ScoresActivity.class);
+        startActivity(getScoresScreenIntent);
     }
-
 }

@@ -5,7 +5,7 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="guess_letter">Guess a letter here …</string>
-    <string name="user_input_edit_text">Your letter here …</string>
+    <string name="user_input_edit_text">Enter your letter here …</string>
     <string name="title_activity_home_screen">HomeScreen</string>
     <string name="ghost_title">GHOST</string>
     <string name="play_text_button">PLAY</string>
@@ -16,7 +16,7 @@
     <string name="player2_name_text">Player 2 Name</string>
     <string name="dictionary_text">Dictionary</string>
     <string name="title_activity_rules_screen">RulesScreen</string>
-    <string name="rules_screen_text">RULES</string>
+    <string name="rules_screen_text">Rules</string>
     <string name="first_rules_text">Ghost is a two-player game where players form a word by alternating turns saying a letter.\n\nThis letter is then added on to the end of the current word fragment, if there is one.\n\nThere are 2 ways to lose, one is by forming a word that is longer than 3 letters (ex: "PEAR").\nThe second way to lose is by creating a fragment of a word which cannot become a word (ex: "QZ").\n\nThe goal of Ghost is simply not to lose!</string>
     <string name="second_rules_text">second</string>
     <string name="settings_text">Settings</string>
@@ -27,5 +27,7 @@
     <string name="new_game_text">NEW GAME</string>
     <string name="congrats_text">Congratulation</string>
     <string name="win_text">You win!</string>
+    <string name="submitTextButton">SUBMIT</string>
+    <string name="homeTextButton">HOME</string>
 
 </resources>

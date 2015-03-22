@@ -8,10 +8,8 @@ public class Game {
     Player player1;
     Player player2;
     Dictionary dictionary;
-    int english = R.raw.english;
-    int dutch = R.raw.dutch;
 
-    public Game(Context ctx, Player player1, Player player2, int language) {
+    public Game(Context ctx, Player player1, Player player2, String language) {
         this.player1 = player1;
         this.player2 = player2;
 
@@ -21,8 +19,9 @@ public class Game {
     public String guessLetter(String userInput, String wordFragment) {
         userInput = userInput.toLowerCase();
         wordFragment = wordFragment.toLowerCase();
+
         if (!wordFragment.equals("")) {
-            if (userInput.trim().length() != 0 && userInput.trim().length() < 2) {
+            if (userInput.length() != 0 && userInput.length() < 2) {
                 return wordFragment + userInput;
             }
             else return "error";
@@ -32,39 +31,32 @@ public class Game {
         }
     }
 
-    public int hasWon(String wordToCheck) {
-        if (dictionary.checkInDictionary(wordToCheck)) {
-            if (wordToCheck.trim().length() == 3 && dictionary.hasOtherWordContaining(wordToCheck)) {
-                return 0;
+    public String hasWon(String wordToCheck) {
+        if (wordToCheck.trim().length() >= 3) {
+            if (dictionary.checkInDictionary(wordToCheck)) {
+                if (dictionary.hasOtherWordContaining(wordToCheck)) {
+                    return "NOT_WON";
+                }
+                return "WORD";
             } else {
-                return 1;
+                if (dictionary.hasWordsStartingWith(wordToCheck)) {
+                    return "NOT_WON";
+                }
+                return "NO_WORD";
             }
         } else {
             if (dictionary.hasWordsStartingWith(wordToCheck)) {
-                return 0;
-            } else return 2;
+                return "NOT_WON";
+            } else return "NO_WORD";
         }
     }
 
     public Player gameWinner(String loser) {
         if (loser.equals(player1.getName())) {
-            int player2score = player2.getScore();
-            player2.setScore(player2score + 1);
             return player2;
         }
         else {
-            int player1score = player1.getScore();
-            player1.setScore(player1score + 1);
             return player1;
-        }
-    }
-
-    public int getDictionary(String languageDictionary) {
-        if (languageDictionary.equals("English")) {
-            return english;
-        }
-        else {
-            return dutch;
         }
     }
 }

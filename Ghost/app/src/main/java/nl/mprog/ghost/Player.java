@@ -4,7 +4,12 @@ package nl.mprog.ghost;
 public class Player {
 
     String name;
-    int score = 0;
+    int score;
+
+    public Player(String name, int score) {
+        this.name = name;
+        this.score = score;
+    }
 
     public int getScore() {
         return score;

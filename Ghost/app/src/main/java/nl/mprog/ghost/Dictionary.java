@@ -11,19 +11,27 @@ import java.util.Iterator;
 
 public class Dictionary {
 
-    public HashSet dictionary = new HashSet();
+    public HashSet<String> dictionary = new HashSet<>();
 
-    Dictionary(Context ctx, int language){
-        InputStream english = ctx.getResources().openRawResource(language);
+    Dictionary(Context ctx, String language){
 
-        InputStreamReader inputReader = new InputStreamReader(english);
+        int languageId;
+        if (language.equals("English")) {
+            languageId = R.raw.english;
+        }
+        else {
+            languageId = R.raw.dutch;
+        }
+
+        InputStream textFile = ctx.getResources().openRawResource(languageId);
+
+        InputStreamReader inputReader = new InputStreamReader(textFile);
         BufferedReader buffReader = new BufferedReader(inputReader);
         String line;
 
         try {
             while ((line = buffReader.readLine()) != null) dictionary.add(line);
-            /*System.out.println(line);*/
-        } catch (IOException e) {
+        } catch (IOException ignored) {
         }
     }
 
@@ -44,9 +52,8 @@ public class Dictionary {
     }
 
     public boolean hasOtherWordContaining(String wordToCheck) {
-        Iterator lines = dictionary.iterator();
-        while (lines.hasNext()) {
-            String currentWord = lines.next().toString();
+        for (Object aDictionary : dictionary) {
+            String currentWord = aDictionary.toString();
             if (currentWord.startsWith(wordToCheck) && currentWord.trim().length() > 3) {
                 return true;
             }

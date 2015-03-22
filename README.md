@@ -25,11 +25,8 @@ The goal of this project is to implement the game of Ghost which is a two player
             (with same layout but different player name) by showing a toast to warn the player that it switches players.
             and ask for the second player to enter a letter. The current word fragment will be updated when switching between players.
             * On these two activities, there is also a menu button available that is activated when clicking on the device's menu icon.
-            There will be two options to the menu which are Restart round and settings. The first one restarts the previous activity
-            and the second one opens the setting page which will be the same activity where players can change their names or language.
-          * Once a player wins, a toast will be generated with the name of the winner and then a new activity will start, namely the
-          one that shows the high scores.
-          * The same is applied when a player loses.
+            The option of the menu is Settings. It opens the setting page which will be the same activity where players can change names or language of dictionary.
+          * Once a player wins, a new activity will start, namely the one that shows the high scores.
   * The second button RULES to see the rules of the game and how to play it.
     * When RULES button is pressed, a new activity is started:
       * On it, a header named rules and a textview beneath it with the rules of the game and how to play it.
@@ -38,7 +35,7 @@ The goal of this project is to implement the game of Ghost which is a two player
     * When SCORES button is pressed, another activity opens:
       * On it, a header High scores and,
       * The first 5 names that have won displayed in a numbered list with their score on the right.
-      * Beneath this list, there is a button called New Game that opens the same activity as the button PLAY on the home page.
+      * Beneath this list, there is a button called New Game that opens the same activity as the button PLAY on the home page. Beneath the New Game button, a home button is present to redirect the user to the Home screen.
 
 ## UI sketches
 
